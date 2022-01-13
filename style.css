@@ -33,6 +33,7 @@ div {
     display: flex;
     align-items: center;
     overflow-x: hidden;
+    transition: width 0.1s linear;
 }
 
 .progress h1 {
