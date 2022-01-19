@@ -6,7 +6,10 @@ function loadBar() {
 
     const intervalId = setInterval(() => {
         progressBar.style.width = `calc(${progressBar.style.width} + 1%)`;
-        progressNum.innerHTML = `${progressBar.style.width.slice(5, progressBar.style.width.length - 1)}`;
+        progressNum.innerHTML = `${progressBar.style.width.slice(
+                                    5, progressBar.style.width.length - 1)
+                                 }
+                                `;
     }, 100);
 
     setTimeout(() => {
@@ -19,3 +22,4 @@ function loadBar() {
 }
 
 window.onload = loadBar;
+
